@@ -8,11 +8,17 @@ class Screen1 extends PureComponent {
  
   render() {
     return (
-      <View flex center>
+      <View flex center style={styles.container}>
         <Text>Screen1</Text>
       </View>
     );
   }
 }
+
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: '#F5FCFF',
+  }
+})
 
 export default Screen1;

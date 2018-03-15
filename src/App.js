@@ -22,7 +22,7 @@ class App extends PureComponent {
     this.props.navigator.push({
       screen: 'reactNativeInit.Screen1',
       title: 'Screen1',
-      animated: false
+      animationType: 'slide-horizontal'
     })
   }
 
