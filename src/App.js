@@ -9,7 +9,7 @@ class App extends PureComponent {
     super(props);
     this.pushScreen = this.pushScreen.bind(this);
   }
-  
+
   state = {
     loading: false
   }
@@ -18,12 +18,12 @@ class App extends PureComponent {
     navigator: PropTypes.object
   };
 
-  pushScreen(){
+  pushScreen() {
     this.props.navigator.push({
       screen: 'reactNativeInit.Screen1',
       title: 'Screen1',
       animationType: 'slide-horizontal'
-    })
+    });
   }
 
   render() {
