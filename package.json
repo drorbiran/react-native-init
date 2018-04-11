@@ -11,7 +11,6 @@
     "react-native": "0.54.2",
     "react-native-navigation": "^1.1.409",
     "react-native-ui-lib": "^3.3.32",
-    "remx": "^2.0.44"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.2",
