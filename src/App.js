@@ -39,7 +39,7 @@ class App extends PureComponent {
           This projects comes equipped with: {'\n'}
           React-Native-Navigation {'\n'}
           React-Native-Ui-lib {'\n'}
-          Remx
+          esling configuration
         </Text>
         <Button
           label="Push Screen"
