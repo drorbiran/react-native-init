@@ -6,10 +6,11 @@
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest"
   },
+  "main": "index.js",
   "dependencies": {
     "react": "^16.3.0-alpha.1",
     "react-native": "0.54.2",
-    "react-native-navigation": "^1.1.409",
+    "react-native-navigation": "^2.0.0",
     "react-native-ui-lib": "^3.3.32"
   },
   "devDependencies": {

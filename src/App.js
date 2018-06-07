@@ -1,9 +1,11 @@
-import React, {PureComponent} from 'react';
+import React, {Component} from 'react';
 import {StyleSheet} from 'react-native';
 import PropTypes from 'prop-types';
 import {View, Text, Button} from 'react-native-ui-lib';
+const {Navigation} = require('react-native-navigation');
 
-class App extends PureComponent {
+
+class App extends Component {
 
   constructor(props) {
     super(props);
@@ -15,14 +17,22 @@ class App extends PureComponent {
   }
 
   static propTypes = {
-    navigator: PropTypes.object
+    navigator: PropTypes.object,
+    componentId: PropTypes.string
   };
 
   pushScreen() {
-    this.props.navigator.push({
-      screen: 'reactNativeInit.Screen1',
-      title: 'Screen1',
-      animationType: 'slide-horizontal'
+    Navigation.push(this.props.componentId, {
+      component: {
+        name: 'reactNativeInit.Screen1',
+        options: {
+          topBar: {
+            title: {
+              text: 'Screen1',
+            }
+          }
+        }
+      }
     });
   }
 
