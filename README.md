@@ -24,6 +24,9 @@ npm i -g react-native-cli
 npm install
 ```
 
+### Renaming the project
+If you would like to rename the project you can use [React Native Rename](https://www.npmjs.com/package/react-native-rename)
+
 ### Running your project
 
 From project dir, run:
