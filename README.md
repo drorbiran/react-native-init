@@ -32,16 +32,15 @@ If you would like to rename the project you can use [React Native Rename](https:
 From project dir, run:
 
 #### iOS
-1. Build and run (this will start a simulator if not already started)
+1. Run the packager
 
-	```sh
-	react-native run-ios
 	```
-	This would also start a packager if not already started
+	npm run start
+	```
+	
 
-2. Set your Simulator to live reload changes `⌘`+`d`  (`cmd`+`d`) => `Enable Live Reload`
-
-
+2. Open the project in xcode from `ios/reactNativeInit.xcodeproj`
+3. Build and run from Xcode
 
 #### Android
 1. Start an emulator
