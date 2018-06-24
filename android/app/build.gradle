@@ -143,10 +143,20 @@ android {
     }
 }
 
+configurations.all {
+    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+        def requested = details.requested
+        if (requested.group == 'com.android.support') {
+            details.useVersion "25.4.0" // <- Change this to whatever version you're using
+        }
+    }
+}
+
 
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
-    implementation "com.android.support:appcompat-v7:25.4.0"
+    implementation 'com.android.support:design:25.4.0'
+    implementation 'com.android.support:appcompat-v7:25.4.0'
     implementation "com.facebook.react:react-native:+"
     implementation project(':react-native-navigation')
 }
