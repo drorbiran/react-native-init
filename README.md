@@ -27,6 +27,13 @@ npm install
 ### Renaming the project
 If you would like to rename the project you can use [React Native Rename](https://www.npmjs.com/package/react-native-rename)
 
+After running React Native Rename, in order to run the project successfully, you will need to manually update your app name in `src/screens.js`, where `<appname>` is the name of your app.
+
+```diff
+-  Navigation.registerComponent('reactNativeInit.App', () => App);
++  Navigation.registerComponent('<appname>.App', () => App);
+```
+
 ### Running your project
 
 From project dir, run:
